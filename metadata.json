@@ -1,0 +1,6 @@
+{
+  "name": "SEEK — Sistem Evaluasi Efektivitas Kampanye Kehumasan",
+  "description": "Aplikasi dashboard profesional untuk praktisi humas dalam mengevaluasi efektivitas kampanye kehumasan berdasarkan perbandingan data sebelum dan sesudah kampanye.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

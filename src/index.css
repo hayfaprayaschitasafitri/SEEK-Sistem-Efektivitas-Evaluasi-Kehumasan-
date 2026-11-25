@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Times New Roman", Times, Georgia, serif;
+  --font-serif: "Times New Roman", Times, Georgia, serif;
+  --font-mono: "Times New Roman", Times, Georgia, serif;
+  --color-baby-blue: #DCEEFF;
+  --color-soft-blue: #B8D9F5;
+  --color-sky-blue: #8FC4EA;
+  --color-soft-yellow: #FFF1B8;
+  --color-champagne-gold: #F5D77E;
+  --color-ivory-white: #FFFEF8;
+  --color-ink: #34495E;
+}
+
+@layer base {
+  html,
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-family: "Times New Roman", Times, Georgia, serif;
+  }
+
+  html {
+    color: #34495E;
+    background-color: #FFFEF8;
+    line-height: 1.625;
+    letter-spacing: 0.006em;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    line-height: 1.625;
+    letter-spacing: 0.006em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+    line-height: 1.32;
+    letter-spacing: 0.004em;
+  }
+
+  p,
+  dd,
+  li {
+    line-height: 1.65;
+  }
+
+  th {
+    letter-spacing: 0.018em;
+    line-height: 1.4;
+  }
+
+  td {
+    line-height: 1.55;
+  }
+
+  label,
+  dt {
+    letter-spacing: 0.012em;
+    line-height: 1.45;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media print {
+  body {
+    background-color: #FFFFFF !important;
+    color: #34495E !important;
+    font-family: "Times New Roman", Times, Georgia, serif !important;
+    line-height: 1.6 !important;
+    letter-spacing: 0.005em !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-container {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    box-shadow: none !important;
+    border: none !important;
+    background-color: #FFFFFF !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+}
